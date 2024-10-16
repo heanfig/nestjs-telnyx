@@ -1,5 +1,5 @@
 
-# @ourfreedom/nestjs-telnyx
+# nestjs-telnyx
 
 A NestJS module for integrating with Telnyx. This package provides a convenient wrapper around the Telnyx API, making it easy to send SMS messages and interact with other Telnyx services within a NestJS application.
 
@@ -8,13 +8,13 @@ A NestJS module for integrating with Telnyx. This package provides a convenient 
 To install this package, use npm or yarn:
 
 ```bash
-npm install @ourfreedom/nestjs-telnyx
+npm install nestjs-telnyx
 ```
 
 Or, if you prefer Yarn:
 
 ```bash
-yarn add @ourfreedom/nestjs-telnyx
+yarn add nestjs-telnyx
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ In your `AppModule` (or any other module where you need Telnyx functionality), i
 
 ```typescript
 import { Module } from '@nestjs/common';
-import { TelnyxModule } from '@ourfreedom/nestjs-telnyx';
+import { TelnyxModule } from 'nestjs-telnyx';
 
 @Module({
   imports: [
@@ -41,7 +41,7 @@ You can now inject the Telnyx client in any service. Here’s an example of a se
 
 ```typescript
 import { Injectable, Inject } from '@nestjs/common';
-import { Telnyx } from '@ourfreedom/nestjs-telnyx';
+import { Telnyx } from 'nestjs-telnyx';
 
 @Injectable()
 export class SmsService {
