@@ -1,0 +1,24 @@
+{
+  "name": "nestjs-telnyx",
+  "version": "1.0.0",
+  "description": "A Wrapper NestJS module for Telnyx integration",
+  "main": "dist/telnyx.module.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "node build.js",
+    "build": "npm run build:types && npm run build:js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/common": "^10.4.5",
+    "@nestjs/core": "^10.4.5",
+    "telnyx": "^2.0.0-beta.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "esbuild": "^0.24.0"
+  }
+}
